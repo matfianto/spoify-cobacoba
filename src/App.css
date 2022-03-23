@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
   color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Main Styling */
+.main {
+  padding: 40px 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  min-height: 85vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Album Container Styling */
+.album-container {
+  margin: auto;
+  max-width: 320px;
+  padding: 20px;
+  border: 15px solid #565cd8;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.album-image {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.song-title {
+  padding: 20px 0 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  color: rgb(26, 34, 43);
+}
+
+.song-artist {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: rgba(51, 48, 48, 0.8);
+}
+
+/* Button Styling */
+.btn {
+  width: 110px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn--select {
+  width: 150px;
+  background-color: rgb(0, 201, 0);
+}
+
+.btn--select:active {
+  background-color: green;
+}
+
+/* Header Styling */
+.header {
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+/* Footer Styling */
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Media Query */
+@media only screen and (min-width: 1024px) {
+  .album-container {
+    display: flex;
+    max-width: 650px;
+    align-items: center;
+    column-gap: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .album-image {
+    max-width: 35%;
+  }
+
+  .song-info {
+    flex: auto;
+  }
+
+  .song-title {
+    font-size: 26px;
+    padding-top: 0;
+  }
+
+  .song-artist {
+    font-size: 20px;
+    margin-bottom: 60px;
   }
 }
