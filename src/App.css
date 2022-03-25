@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 /* Global Styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -11,9 +14,9 @@ body {
 }
 
 a {
-  color: white;
+  color: aliceblue;
   text-decoration: none;
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted aliceblue;
 }
 
 /* Main Styling */
@@ -22,17 +25,18 @@ a {
   display: flex;
   align-self: center;
   justify-content: center;
-  min-height: 85vh;
+  min-height: 100vh;
 }
 
-/* Album Container Styling */
-.album-container {
+/* Album Track Styling */
+.album-track {
   margin: auto;
   max-width: 320px;
   padding: 20px;
-  border: 15px solid #565cd8;
+  border: green solid 10px;
   border-radius: 10px;
   background-color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(122, 120, 120, 0.267);
 }
 
 .album-image {
@@ -44,7 +48,7 @@ a {
 .song-title {
   padding: 20px 0 10px;
   font-size: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: red solid 1px;
   color: rgb(26, 34, 43);
 }
 
@@ -75,21 +79,15 @@ a {
 
 .btn--select {
   width: 150px;
-  background-color: rgb(0, 201, 0);
+  background-color: green
+}
+
+.btn--select:hover {
+  box-shadow: rgb(1, 100, 1) 0px 0px 10px;
 }
 
 .btn--select:active {
-  background-color: green;
-}
-
-/* Header Styling */
-.header {
-  left: 0;
-  right: 0;
-  bottom: 0px;
-  text-align: center;
-  font-size: 50px;
-  color: #fff;
+  background-color: rgb(0, 71, 0);
 }
 
 /* Footer Styling */
@@ -105,7 +103,7 @@ a {
 
 /* Media Query */
 @media only screen and (min-width: 1024px) {
-  .album-container {
+  .album-track {
     display: flex;
     max-width: 650px;
     align-items: center;

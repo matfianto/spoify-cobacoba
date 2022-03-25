@@ -1,22 +1,24 @@
 // import logo from './logo.svg';
 import './App.css';
-import data from "./data/dataFromSpotify.js";
+// import data from "./data/dataFromSpotify.js";
+import Main from "./layouts/Main";
+import Footer from "./layouts/Footer";
 
 function App() {
-  const {
-    album: {
-      images: [{ url: albumImgUrl }],
-      name: albumName,
-    },
-    artists: [{ name: artistName }],
-    name: songTitle,
-  } = data;
-  console.log(data);
+  // const {
+  //   album: {
+  //     images: [{ url: albumImgUrl }],
+  //     name: albumName,
+  //   },
+  //   artists: [{ name: artistName }],
+  //   name: songTitle,
+  // } = data;
+  // console.log(data);
 
 
   return (
     <div className="App">
-      <header className="header">
+       {/* <header className="header">
         <p>
           Sopify Coba-Coba
         </p>
@@ -37,7 +39,10 @@ function App() {
         <p>
           Generasi Gigih FE - 2022 - Rahmat Alfianto
         </p>
-      </footer>
+      </footer>  */}
+      <Main />
+      <Footer />
+      
     </div>
   );
 }
