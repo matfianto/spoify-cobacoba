@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import data from "./data/dataFromSpotify.js";
 import Main from "./layouts/Main";
 import Footer from "./layouts/Footer";
@@ -17,7 +17,10 @@ function App() {
 
 
   return (
+    
     <div className="App">
+      
+    <h2 className="judul">Spotify CobaCoba</h2>
        {/* <header className="header">
         <p>
           Sopify Coba-Coba

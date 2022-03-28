@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>
-        GenerasiGigih - FE - ©2022
+        GenerasiGigih - FE - Rahmat Alfianto - ©2022
       </p>
     </footer>
   );
