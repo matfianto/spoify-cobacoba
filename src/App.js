@@ -1,51 +1,20 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import data from "./data/dataFromSpotify.js";
+// import Footer from "./layouts/Footer";
 import Main from "./layouts/Main";
-import Footer from "./layouts/Footer";
+
+/**
+ * TODO: Homework-Module-4-Session-2
+ * * Move the create playlist page URL to /create-playlist
+ * * The Create Playlist page only accessible when user already login. If user haven't logged in, redirect to root URL (/)
+ * * For the root URL (/)
+ * * * If user haven't logged in, show the Login link
+ * * * If user already logged in,redirect to Create Playlist page
+ */
 
 function App() {
-  // const {
-  //   album: {
-  //     images: [{ url: albumImgUrl }],
-  //     name: albumName,
-  //   },
-  //   artists: [{ name: artistName }],
-  //   name: songTitle,
-  // } = data;
-  // console.log(data);
-
-
   return (
-    
     <div className="App">
-      
-    <h2 className="judul">Spotify CobaCoba</h2>
-       {/* <header className="header">
-        <p>
-          Sopify Coba-Coba
-        </p>
-      </header>
-      <main className="main">
-        <section className="album-container">
-          <img src={albumImgUrl} alt={albumName} className="album-image" />
-          <div className="song-info">
-            <h1 className="song-title">{songTitle}</h1>
-            <h2 className="song-artist">{artistName}</h2>
-            <button type="button" className="btn btn--select">
-              Select
-            </button>
-          </div>
-        </section>
-      </main>
-      <footer className="footer">
-        <p>
-          Generasi Gigih FE - 2022 - Rahmat Alfianto
-        </p>
-      </footer>  */}
       <Main />
-      <Footer />
-      
+      {/* <Footer /> */}
     </div>
   );
 }
