@@ -1,3 +1,7 @@
+# Project simply to fetch Spotify API
+
+## already hosted at https://spoify-cobacoba.vercel.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and built to do my homework for Generasi Gigih 2.0 - Frontend Engineering Track
