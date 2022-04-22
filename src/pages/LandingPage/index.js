@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { authToken } from "../../redux/actions";
 import { requestAuth } from "../../libs/auth";
+import { Button } from "@mui/material";
+import { Box } from '@material-ui/core';
 
 const LandingPage = () => {
   const dispatch = useDispatch();
@@ -34,9 +36,11 @@ const LandingPage = () => {
 
   return (
     <main className="main">
-      <button className="btn btn--access-token" onClick={requestAuth}>
+      <Box m={2} pt={3} mt={25} textAlign="center">
+      <Button variant="contained" color="success" onClick={requestAuth}>
         Click here to login with Spotify account
-      </button>
+      </Button>
+      </Box>
     </main>
   );
 };

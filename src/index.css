@@ -131,7 +131,7 @@ li {
 
 .song-track:not(.song-track:last-child) {
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 85px;
 }
 
 .song-info {
