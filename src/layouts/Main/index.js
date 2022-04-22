@@ -8,11 +8,11 @@ const Main = () => {
 
   return (
     <Switch>
-      <Route exact path="/create-playlist">
+      <Route exact path="/createplaylist">
         {currentAccessToken ? <CreatePlaylist /> : <Redirect to="/" />}
       </Route>
       <Route exact path="/">
-        {currentAccessToken ? <Redirect to="/create-playlist" /> : <LandingPage />}
+        {currentAccessToken ? <Redirect to="/createplaylist" /> : <LandingPage />}
       </Route>
     </Switch>
   );

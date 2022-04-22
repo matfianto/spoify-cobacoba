@@ -1,15 +1,12 @@
-import { myLinks } from "../../data/OneSample";
-
 const Footer = () => {
 
   return (
     <footer className="footer">
       <p>
-        Made 2022{" "}
-        <a>
-          Rahmat Alfianto
-        </a>{" "}
-        ©2022
+      GenerasiGigih - FE - Rahmat Alfianto - ©2022
+      </p>
+      <p>
+      This project is not affiliated with Spotify
       </p>
     </footer>
   );
